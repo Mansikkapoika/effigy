@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>Advanced Custom Facebook Likebox Widget</name>
+	<author>Ved Maila</author>
+	<creationDate>March, 2014</creationDate>
+	<copyright>All rights reserved by ConnexDesigns.com</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@connexdesigns.com</authorEmail>
+	<authorUrl>www.connexdesigns.com/resources</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		<style type="text/css">
+			span.readonly { padding: 10px; font-family: Arial; font-size:13px !important; font-weight: normal !important; text-align: justify; color: #4d4d4d; line-height: 24px; }
+			span.readonly h1 { clear:both; font-family: Georgia, sans-serif; font-size:38px; margin:30px 20px 23px; padding:0px 0px 24px 10px; color:#333; border-bottom: 1px solid #eee; font-weight: normal; }
+			span.readonly p { margin: 0 26px 10px }
+			span.readonly p a { color: #2F4C6D }
+			span.readonly p.homepage { margin-top: 30px }
+			span.readonly p.license { border-top: 1px solid #eee; font-size: 11px; margin: 30px 26px 0; padding: 6px 0; }
+		</style>	
+		<span class="readonly"><h1>Advanced Custom Facebook Likebox Widget<small>ver. 1.0.0</small></h1><p>
+		Thanks for purchasing Advanced Custom Facebook Likebox Widget. Using Advanced Custom Facebook Likebox Widget you can display a highly customized facebook likebox on your website. Please rate us on Joomla Extensions Directory if you have liked our module.</p>	
+		<p class="license">Advanced Custom Facebook Likebox Widget is released under the <a href="http://www.gnu.org/licenses/gpl-2.0.html" target="_blank">GNU/GPL v2 license.</a></p></span></span>
+	]]>
+	</description>
+	<files>
+		<filename module="mod_advanced_custom_facebook_likebox_widget">mod_advanced_custom_facebook_likebox_widget.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_advanced_custom_facebook_likebox_widget.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_advanced_custom_facebook_likebox_widget.ini</language>
+		<language tag="en-GB">en-GB.mod_advanced_custom_facebook_likebox_widget.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="page"
+					type="text"
+					default="http://www.facebook.com/FacebookDevelopers"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_FACEBOOK_PAGE_URL_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_FACEBOOK_PAGE_URL_DESC" />
+				<field
+					name="page_name"
+					type="text"
+					default="Facebook Developers"
+					label="Page Name"
+					description="Name of your Facebook Page" />
+				
+                                <field
+					name="width"
+					type="text"
+					default="300"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_WIDTH_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_WIDTH_DESC" />
+				<field
+					name="height"
+					type="text"
+					default="556"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_HEIGHT_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_HEIGHT_DESC" />
+				<field
+					name="stream"
+					type="list"
+					default="true"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_STREAM_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_STREAM_DESC">
+					<option
+						value="true">MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_STREAM_OPTION_YES</option>
+					<option
+						value="false">MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_STREAM_OPTION_NO</option>
+				</field>
+				<field
+					name="background"
+					type="color"
+					default="#050026"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_BACKGROUND_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_BACKGROUND_DESC" />
+				<field
+					name="header"
+					type="list"
+					default="false"
+					label="Hide Cover"
+					description="Hide Cover - True or False">
+					<option
+						value="true">Yes</option>
+					<option
+						value="false">No</option>
+				</field>
+                                <field
+					name="show_facepile"
+					type="list"
+					default="true"
+					label="Show Facepile"
+					description="Show Facepile - True or False">
+					<option
+						value="true">Yes</option>
+					<option
+						value="false">No</option>
+				</field>
+                                <field
+					name="adapt_container_width"
+					type="list"
+					default="true"
+					label="Adapt Container Width"
+					description="Adapt Container Width - True or False">
+					<option
+						value="true">Yes</option>
+					<option
+						value="false">No</option>
+				</field>
+                                <field
+					name="small_header"
+					type="list"
+					default="false"
+					label="Small Header"
+					description="Small Header - True or False">
+					<option
+						value="true">Yes</option>
+					<option
+						value="false">No</option>
+				</field>
+				<field
+					name="padding"
+					type="text"
+					default="15"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_PADDING_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_PADDING_DESC" />
+				<field
+					name="radius"
+					type="text"
+					default="15"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_RADIUS_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_RADIUS_DESC" />
+				<field
+					name="border"
+					type="text"
+					default="2"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_BORDER_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_BORDER_DESC" />
+				<field
+					name="bordercolor"
+					type="color"
+					default="#9A1717"
+					label="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_BORDER_COLOR_LABEL"
+					description="MOD_ADVANCED_CUSTOM_FACEBOOK_LIKEBOX_WIDGET_BORDER_COLOR_DESC" />
+				
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
